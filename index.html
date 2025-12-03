@@ -29,6 +29,30 @@
       </nav>
 
       <main>
+        <!-- Server Info -->
+        <section class="server-info-banner">
+          <div class="server-ip-box">
+            <h3>🎮 IP do Servidor</h3>
+            <div class="ip-address">190.102.40.96:25714</div>
+            <button class="copy-ip-btn" onclick="navigator.clipboard.writeText('190.102.40.96:25714'); this.textContent='✓ Copiado!'; setTimeout(() => this.textContent='📋 Copiar IP', 2000)">📋 Copiar IP</button>
+          </div>
+          
+          <div class="whitelist-box">
+            <h3>🔒 Whitelist Ativa</h3>
+            <p>Para entrar no servidor, solicite acesso:</p>
+            <div class="contact-buttons">
+              <a href="https://chat.whatsapp.com/EwNL8Z7Cv0ECGcZV9jrVkz" target="_blank" class="contact-btn whatsapp">
+                <span class="btn-icon">💬</span>
+                <span>WhatsApp</span>
+              </a>
+              <a href="https://discord.gg/WSbCQECGbF" target="_blank" class="contact-btn discord">
+                <span class="btn-icon">🎮</span>
+                <span>Discord</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
         <!-- Comandos Básicos -->
         <section id="comandos" class="section">
           <h2>🎮 Comandos Básicos</h2>
