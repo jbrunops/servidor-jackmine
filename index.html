@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia do Jogador - JackMine</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="hero">
+        <h1>📖 Guia do Jogador</h1>
+        <p class="subtitle">Servidor JackMine - Tudo que você precisa saber!</p>
+      </header>
+
+      <nav class="quick-nav">
+        <a href="#comandos">Comandos</a>
+        <a href="#economia">Economia</a>
+        <a href="#loja">Loja</a>
+        <a href="#kits">Kits</a>
+        <a href="#skills">Skills</a>
+        <a href="#protecao">Proteção</a>
+      </nav>
+
+      <main>
+        <!-- Comandos Básicos -->
+        <section id="comandos" class="section">
+          <h2>🎮 Comandos Básicos</h2>
+
+          <div class="command-grid">
+            <div class="command-card">
+              <h3>Teleporte</h3>
+              <div class="command-list">
+                <div class="command-item">
+                  <code>/spawn</code>
+                  <span>Volta ao spawn</span>
+                </div>
+                <div class="command-item">
+                  <code>/sethome &lt;nome&gt;</code>
+                  <span>Criar home (máx. 5)</span>
+                </div>
+                <div class="command-item">
+                  <code>/home &lt;nome&gt;</code>
+                  <span>Ir para home</span>
+                </div>
+                <div class="command-item">
+                  <code>/tpa &lt;jogador&gt;</code>
+                  <span>Pedir teleporte</span>
+                </div>
+                <div class="command-item">
+                  <code>/tpaccept</code>
+                  <span>Aceitar teleporte</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="command-card">
+              <h3>Comunicação</h3>
+              <div class="command-list">
+                <div class="command-item">
+                  <code>/msg &lt;jogador&gt;</code>
+                  <span>Mensagem privada</span>
+                </div>
+                <div class="command-item">
+                  <code>/reply</code>
+                  <span>Responder (atalho: /r)</span>
+                </div>
+                <div class="command-item">
+                  <code>/afk</code>
+                  <span>Marcar como ausente</span>
+                </div>
+                <div class="command-item">
+                  <code>/list</code>
+                  <span>Ver jogadores online</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="command-card">
+              <h3>Informações</h3>
+              <div class="command-list">
+                <div class="command-item">
+                  <code>/balance</code>
+                  <span>Ver seu saldo</span>
+                </div>
+                <div class="command-item">
+                  <code>/rules</code>
+                  <span>Ver regras</span>
+                </div>
+                <div class="command-item">
+                  <code>/help</code>
+                  <span>Ver ajuda</span>
+                </div>
+                <div class="command-item">
+                  <code>/ping</code>
+                  <span>Ver seu ping</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Economia -->
+        <section id="economia" class="section">
+          <h2>💰 Sistema de Economia</h2>
+
+          <div class="info-box highlight">
+            <h3>Moeda: R$ (Real Brasileiro)</h3>
+            <p>
+              Nossa economia é baseada em valores realistas para manter o jogo
+              balanceado e divertido!
+            </p>
+          </div>
+
+          <div class="economy-grid">
+            <div class="economy-card">
+              <h3>Como Ganhar Dinheiro</h3>
+              <ul>
+                <li>
+                  <strong>Vendendo na Loja:</strong> Use <code>/loja</code> para
+                  vender itens
+                </li>
+                <li>
+                  <strong>Subindo Skills:</strong> Ganhe R$ ao upar de nível
+                </li>
+                <li>
+                  <strong>Vendendo para Jogadores:</strong> Negocie com outros
+                  players
+                </li>
+              </ul>
+            </div>
+
+            <div class="economy-card">
+              <h3>Limites Diários</h3>
+              <div class="alert warning">
+                <strong>⚠️ Atenção:</strong> Existem limites de venda por dia
+                para manter a economia balanceada!
+              </div>
+              <ul>
+                <li>Farming: 20 stacks/dia</li>
+                <li>Diamantes: 5 unidades/dia</li>
+                <li>Ferro: 20 unidades/dia</li>
+              </ul>
+              <p class="small-text">Limites resetam à meia-noite</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Loja -->
+        <section id="loja" class="section">
+          <h2>🏪 Loja do Servidor</h2>
+
+          <div class="shop-info">
+            <p>
+              <strong>Comando:</strong> <code>/loja</code> ou <code>/shop</code>
+            </p>
+            <p><strong>Como usar:</strong></p>
+            <ul>
+              <li>Clique esquerdo para <span class="buy">COMPRAR</span></li>
+              <li>Clique direito para <span class="sell">VENDER</span></li>
+              <li>Shift + Clique direito para escolher quantidade</li>
+            </ul>
+          </div>
+
+          <div class="price-tables">
+            <div class="price-table">
+              <h3>🌾 Plantação</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Item (64x)</th>
+                    <th>Compra</th>
+                    <th>Venda</th>
+                    <th>Limite/Dia</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Trigo</td>
+                    <td class="price-buy">R$15</td>
+                    <td class="price-sell">R$10</td>
+                    <td>20 stacks</td>
+                  </tr>
+                  <tr>
+                    <td>Cenoura</td>
+                    <td class="price-buy">R$12</td>
+                    <td class="price-sell">R$8</td>
+                    <td>20 stacks</td>
+                  </tr>
+                  <tr>
+                    <td>Batata</td>
+                    <td class="price-buy">R$12</td>
+                    <td class="price-sell">R$8</td>
+                    <td>20 stacks</td>
+                  </tr>
+                  <tr>
+                    <td>Cana de Açúcar</td>
+                    <td class="price-buy">R$18</td>
+                    <td class="price-sell">R$12</td>
+                    <td>20 stacks</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="price-table">
+              <h3>⛏️ Minerais</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th>Compra</th>
+                    <th>Venda</th>
+                    <th>Limite/Dia</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>💎 Diamante</td>
+                    <td class="price-buy">R$500</td>
+                    <td class="price-sell">R$350</td>
+                    <td>5 unidades</td>
+                  </tr>
+                  <tr>
+                    <td>🟡 Ouro</td>
+                    <td class="price-buy">R$150</td>
+                    <td class="price-sell">R$100</td>
+                    <td>10 unidades</td>
+                  </tr>
+                  <tr>
+                    <td>⚪ Ferro</td>
+                    <td class="price-buy">R$80</td>
+                    <td class="price-sell">R$50</td>
+                    <td>20 unidades</td>
+                  </tr>
+                  <tr>
+                    <td>🟠 Cobre</td>
+                    <td class="price-buy">R$40</td>
+                    <td class="price-sell">R$25</td>
+                    <td>30 unidades</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Kits -->
+        <section id="kits" class="section">
+          <h2>🎁 Sistema de Kits</h2>
+
+          <p class="section-intro">
+            <strong>Comando:</strong> <code>/kit</code> ou <code>/kits</code>
+          </p>
+
+          <div class="kits-grid">
+            <div class="kit-card starter">
+              <div class="kit-header">
+                <h3>🌱 Kit Iniciante</h3>
+                <span class="kit-price free">GRÁTIS</span>
+              </div>
+              <div class="kit-content">
+                <p class="kit-cooldown">Uso único</p>
+                <h4>Itens incluídos:</h4>
+                <ul>
+                  <li>1x Machado de Madeira</li>
+                  <li>1x Picareta de Madeira</li>
+                  <li>1x Espada de Madeira</li>
+                  <li>5x Pães</li>
+                  <li>1x Pá de Ouro (para proteger terreno)</li>
+                  <li>1x Cama</li>
+                </ul>
+                <div class="alert info">
+                  <strong>✨ Bônus:</strong> Você recebe automaticamente ao
+                  entrar pela primeira vez!
+                </div>
+              </div>
+            </div>
+
+            <div class="kit-card stone">
+              <div class="kit-header">
+                <h3>🪨 Kit Pedra</h3>
+                <span class="kit-price free">GRÁTIS</span>
+              </div>
+              <div class="kit-content">
+                <p class="kit-cooldown">Cooldown: 24 horas</p>
+                <h4>Itens incluídos:</h4>
+                <ul>
+                  <li>1x Machado de Pedra</li>
+                  <li>1x Picareta de Pedra</li>
+                  <li>1x Espada de Pedra</li>
+                </ul>
+                <div class="alert info">
+                  <strong>💡 Dica:</strong> Use quando suas ferramentas
+                  quebrarem!
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+          <h2>⚔️ Sistema de Skills (AuraSkills)</h2>
+
+          <p class="section-intro">
+            <strong>Comando:</strong> <code>/skills</code>
+          </p>
+          <p>
+            Faça ações para ganhar XP, suba de nível para ficar mais forte e
+            ganhe dinheiro!
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Skills de Coleta</h3>
+              <div class="skill-item">
+                <span class="skill-icon">🌾</span>
+                <div class="skill-info">
+                  <strong>Farming</strong>
+                  <p>Plantar e colher - R$5 a cada 3 níveis</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-icon">⛏️</span>
+                <div class="skill-info">
+                  <strong>Mining</strong>
+                  <p>Minerar blocos - R$10 a cada 3 níveis</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-icon">🪓</span>
+                <div class="skill-info">
+                  <strong>Foraging</strong>
+                  <p>Cortar árvores - R$8 a cada 3 níveis</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-icon">🎣</span>
+                <div class="skill-info">
+                  <strong>Fishing</strong>
+                  <p>Pescar - R$5 a cada 3 níveis</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Skills de Combate</h3>
+              <div class="skill-item">
+                <span class="skill-icon">⚔️</span>
+                <div class="skill-info">
+                  <strong>Fighting</strong>
+                  <p>Combate corpo a corpo - R$15 a cada 3 níveis</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-icon">🏹</span>
+                <div class="skill-info">
+                  <strong>Archery</strong>
+                  <p>Arco e flecha - R$8 a cada 3 níveis</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-icon">🛡️</span>
+                <div class="skill-info">
+                  <strong>Defense</strong>
+                  <p>Receber dano - R$8 a cada 3 níveis</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Proteção -->
+        <section id="protecao" class="section">
+          <h2>🏰 Proteção de Terrenos</h2>
+
+          <div class="protection-guide">
+            <h3>Como Proteger Seu Terreno</h3>
+            <ol class="steps">
+              <li>
+                <strong>Pegue uma Pá de Ouro</strong>
+                <p>Crafta ou compra uma pá de ouro</p>
+              </li>
+              <li>
+                <strong>Marque o Primeiro Canto</strong>
+                <p>Clique com a pá de ouro no chão</p>
+              </li>
+              <li>
+                <strong>Marque o Segundo Canto</strong>
+                <p>Clique no canto oposto (diagonal)</p>
+              </li>
+              <li>
+                <strong>Pronto!</strong>
+                <p>Sua área está protegida contra griefing</p>
+              </li>
+            </ol>
+
+            <div class="command-list">
+              <h4>Comandos de Proteção</h4>
+              <div class="command-item">
+                <code>/claim</code>
+                <span>Criar área protegida</span>
+              </div>
+              <div class="command-item">
+                <code>/abandonclaim</code>
+                <span>Deletar área atual</span>
+              </div>
+              <div class="command-item">
+                <code>/claimslist</code>
+                <span>Ver todas suas áreas</span>
+              </div>
+              <div class="command-item">
+                <code>/claimblocks</code>
+                <span>Ver blocos disponíveis</span>
+              </div>
+              <div class="command-item">
+                <code>/containertrust &lt;jogador&gt;</code>
+                <span>Dar acesso a baús/portas</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Regras -->
+        <section id="regras" class="section">
+          <h2>⚠️ Regras do Servidor</h2>
+
+          <div class="rules-grid">
+            <div class="rules-card forbidden">
+              <h3>❌ Proibido</h3>
+              <ul>
+                <li>Usar hacks/cheats</li>
+                <li>Griefar (destruir construções alheias)</li>
+                <li>Roubar de áreas protegidas</li>
+                <li>Spam no chat</li>
+                <li>Linguagem ofensiva</li>
+                <li>Farms AFK (kick em 15min)</li>
+              </ul>
+            </div>
+
+            <div class="rules-card allowed">
+              <h3>✅ Permitido</h3>
+              <ul>
+                <li>PvP consensual</li>
+                <li>Comércio entre jogadores</li>
+                <li>Farms automáticas (sem AFK)</li>
+                <li>Construções criativas</li>
+                <li>Ajudar outros jogadores</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="alert warning">
+            <strong>🛡️ Sistema Anti-Cheat Ativo:</strong> O servidor possui
+            GrimAC para detectar hacks. Jogue limpo para evitar punições!
+          </div>
+        </section>
+
+        <!-- Dicas -->
+        <section id="dicas" class="section">
+          <h2>💡 Dicas de Progressão</h2>
+
+          <div class="progression-timeline">
+            <div class="timeline-item">
+              <div class="timeline-badge">Dia 1</div>
+              <div class="timeline-content">
+                <h4>Iniciante</h4>
+                <ul>
+                  <li>Receba o Kit Iniciante</li>
+                  <li>Colete recursos básicos</li>
+                  <li>Faça uma casa simples</li>
+                  <li>Proteja sua área com /claim</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-badge">Dia 2-3</div>
+              <div class="timeline-content">
+                <h4>Intermediário</h4>
+                <ul>
+                  <li>Minere ferro</li>
+                  <li>Venda ferro na loja (R$50 cada)</li>
+                  <li>Pegue Kit Pedra (grátis)</li>
+                  <li>Comece a farmar trigo</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-badge">Semana 1</div>
+              <div class="timeline-content">
+                <h4>Avançado</h4>
+                <ul>
+                  <li>Crie farms automáticas</li>
+                  <li>Venda 20 stacks/dia (R$200)</li>
+                  <li>Minere diamantes</li>
+                  <li>Meta: R$3.000-5.000</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>Servidor JackMine - Divirta-se! 🎮</p>
+        <p class="small-text">
+          Precisa de ajuda? Use <code>/help</code> ou pergunte no chat!
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
