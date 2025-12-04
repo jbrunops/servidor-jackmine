@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guia Completo - JackMine</title>
-    <meta name="description" content="Guia definitivo do servidor JackMine - Tudo que você precisa saber para jogar!">
+    <title>Guia Completo do Jogador - JackMine</title>
+    <meta name="description" content="Guia completo do servidor JackMine - Tudo que você precisa saber para começar!">
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,25 +13,24 @@
   <body>
     <div class="container">
       <header class="hero">
-        <h1>📚 Guia Completo do Servidor</h1>
-        <p class="subtitle">JackMine - Tudo que você precisa saber!</p>
+        <h1>📖 Guia do Jogador</h1>
+        <p class="subtitle">JackMine Server - Tudo que você precisa saber!</p>
       </header>
 
       <nav class="quick-nav">
-        <a href="#acesso">Primeiro Acesso</a>
-        <a href="#comandos">Comandos</a>
+        <a href="#conectar">Conectar</a>
+        <a href="#registro">Registro</a>
         <a href="#economia">Economia</a>
-        <a href="#loja">Loja</a>
-        <a href="#kits">Kits</a>
-        <a href="#skills">Skills</a>
+        <a href="#profissoes">Profissões</a>
         <a href="#protecao">Proteção</a>
+        <a href="#homes">Homes</a>
+        <a href="#comandos">Comandos</a>
         <a href="#regras">Regras</a>
-        <a href="#progressao">Progressão</a>
         <a href="#faq">FAQ</a>
       </nav>
 
       <main>
-        <!-- Server Info -->
+        <!-- Server Connection Info -->
         <section class="server-info-banner">
           <div class="server-ip-box">
             <h3>🎮 IP do Servidor</h3>
@@ -55,68 +54,437 @@
           </div>
         </section>
 
-        <!-- Primeiro Acesso -->
-        <section id="acesso" class="section">
-          <h2>🎮 Primeiro Acesso</h2>
+        <!-- Como Conectar -->
+        <section id="conectar" class="section">
+          <h2>📡 Como Conectar</h2>
           
           <div class="access-grid">
             <div class="access-card java">
               <h3>☕ Java Edition</h3>
-              <ol class="steps-list">
-                <li>
-                  <strong>Conectar ao Servidor</strong>
-                  <p>Abra o Minecraft Java → Multiplayer → Add Server → Digite o IP acima</p>
-                </li>
-                <li>
-                  <strong>Registrar sua Conta</strong>
-                  <p>Digite: <code>/register &lt;senha&gt; &lt;senha&gt;</code></p>
-                  <p class="small-text">Exemplo: /register minhasenha123 minhasenha123</p>
-                </li>
-                <li>
-                  <strong>Login em Próximas Conexões</strong>
-                  <p>Digite: <code>/login &lt;senha&gt;</code></p>
-                </li>
-              </ol>
+              <div class="connection-info">
+                <div class="info-row">
+                  <span class="label">IP:</span>
+                  <code>190.102.40.96</code>
+                </div>
+                <div class="info-row">
+                  <span class="label">Porta:</span>
+                  <code>25714</code>
+                </div>
+                <div class="info-row">
+                  <span class="label">Versão:</span>
+                  <code>1.20.x - 1.21.x</code>
+                </div>
+              </div>
             </div>
 
             <div class="access-card bedrock">
               <h3>🎮 Bedrock Edition</h3>
-              <ol class="steps-list">
-                <li>
-                  <strong>Conectar ao Servidor</strong>
-                  <p>Servers → Add Server</p>
-                  <p>IP: <code>190.102.40.96</code> | Porta: <code>19132</code></p>
-                </li>
-                <li>
-                  <strong>Autenticação Automática</strong>
-                  <p>✅ Jogadores Bedrock NÃO precisam se registrar!</p>
-                  <p>Autenticação via conta Microsoft/Xbox</p>
-                </li>
-                <li>
-                  <strong>Seu Nome</strong>
-                  <p>Aparecerá com <code>~</code> na frente (ex: ~Persefone777339)</p>
-                </li>
-              </ol>
+              <div class="connection-info">
+                <div class="info-row">
+                  <span class="label">IP:</span>
+                  <code>190.102.40.96</code>
+                </div>
+                <div class="info-row">
+                  <span class="label">Porta:</span>
+                  <code>19132</code>
+                </div>
+                <div class="info-row">
+                  <span class="label">Versão:</span>
+                  <code>Última Bedrock</code>
+                </div>
+              </div>
+              <div class="alert info">
+                <strong>📝 Nota:</strong> Jogadores Bedrock aparecem com <code>~</code> antes do nome.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Registro e Login -->
+        <section id="registro" class="section">
+          <h2>🔐 Primeiro Acesso - Registro e Login</h2>
+
+          <div class="steps-container">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Registro (Primeira Vez)</h3>
+                <p>Ao entrar pela primeira vez, você verá:</p>
+                <div class="code-block">Por favor, registre-se com o comando "/register &lt;senha&gt; &lt;senha&gt;"</div>
+                <p><strong>Execute:</strong></p>
+                <div class="command-example">
+                  <code>/register suasenha suasenha</code>
+                </div>
+                <div class="alert warning">
+                  <strong>⚠️ Importante:</strong>
+                  <ul>
+                    <li>Senha deve ter entre <strong>5 e 30 caracteres</strong></li>
+                    <li>Digite a senha <strong>duas vezes</strong> para confirmar</li>
+                    <li><strong>Guarde sua senha!</strong> Você precisará sempre</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Login (Próximas Vezes)</h3>
+                <p>Sempre que entrar no servidor:</p>
+                <div class="command-example">
+                  <code>/login suasenha</code>
+                </div>
+                <p><strong>Atalho rápido:</strong></p>
+                <div class="command-example">
+                  <code>/l suasenha</code>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>Sistema de Sessões</h3>
+                <p>Se você sair e voltar em <strong>até 5 minutos</strong> com o <strong>mesmo IP</strong>, não precisará fazer login novamente!</p>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>Alterar Senha</h3>
+                <div class="command-example">
+                  <code>/changepassword senhaantiga senhanova</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Economia -->
+        <section id="economia" class="section">
+          <h2>💰 Sistema de Economia</h2>
+
+          <div class="economy-commands">
+            <div class="command-card">
+              <h3>Ver Seu Saldo</h3>
+              <div class="command-list">
+                <div class="command-item">
+                  <code>/balance</code>
+                  <span>Ver saldo completo</span>
+                </div>
+                <div class="command-item">
+                  <code>/bal</code>
+                  <span>Atalho rápido</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="command-card">
+              <h3>Enviar Dinheiro</h3>
+              <div class="command-list">
+                <div class="command-item">
+                  <code>/pay &lt;jogador&gt; &lt;quantia&gt;</code>
+                  <span>Transferir dinheiro</span>
+                </div>
+              </div>
+              <p class="example-text"><strong>Exemplo:</strong> <code>/pay ~SuperNerdAqui 100</code></p>
             </div>
           </div>
 
           <div class="info-box highlight">
-            <h3>🎁 Kit Inicial Automático</h3>
-            <p>Ao entrar pela primeira vez, você recebe:</p>
-            <ul class="inline-list">
-              <li>1x Machado de Madeira</li>
-              <li>1x Picareta de Madeira</li>
-              <li>1x Espada de Madeira</li>
-              <li>5x Pães</li>
-              <li>1x Pá de Ouro (para proteger terreno)</li>
-              <li>1x Cama</li>
-            </ul>
+            <h3>💵 Como Ganhar Dinheiro</h3>
+            <ol class="money-list">
+              <li><strong>Trabalhando em Profissões</strong> (veja seção abaixo)</li>
+              <li><strong>Vendendo itens</strong> na loja</li>
+              <li><strong>Negociando</strong> com outros jogadores</li>
+            </ol>
           </div>
         </section>
 
-        <!-- Comandos Básicos -->
+        <!-- Profissões -->
+        <section id="profissoes" class="section">
+          <h2>🛠️ Sistema de Profissões (Empregos)</h2>
+
+          <div class="jobs-header">
+            <p class="section-intro">Trabalhe em até <strong>13 profissões diferentes</strong> ao mesmo tempo!</p>
+            <div class="command-example">
+              <code>/jobs</code>
+              <code>/empregos</code>
+              <code>/profissoes</code>
+            </div>
+          </div>
+
+          <div class="jobs-grid">
+            <div class="job-card hunter">
+              <div class="job-icon">⚔️</div>
+              <h3>Caçador</h3>
+              <p>Mate mobs hostis e animais</p>
+              <div class="job-examples">
+                <div class="job-reward">Zombie: <span class="money">R$ 0.096</span> + 2 XP</div>
+                <div class="job-reward">Warden: <span class="money">R$ 9.60</span> + 100 XP</div>
+                <div class="job-reward">Ender Dragon: <span class="money">R$ 24.00</span> + 250 XP</div>
+              </div>
+            </div>
+
+            <div class="job-card miner">
+              <div class="job-icon">⛏️</div>
+              <h3>Minerador</h3>
+              <p>Mine minérios e pedras</p>
+              <div class="job-examples">
+                <div class="job-reward">Carvão: <span class="money">R$ 0.096</span> + 1 XP</div>
+                <div class="job-reward">Diamante: <span class="money">R$ 0.1632</span> + 1.7 XP</div>
+              </div>
+            </div>
+
+            <div class="job-card farmer">
+              <div class="job-icon">🌾</div>
+              <h3>Fazendeiro</h3>
+              <p>Colha plantações</p>
+              <div class="job-examples">
+                <div class="job-reward">Ganhe dinheiro colhendo crops</div>
+              </div>
+            </div>
+
+            <div class="job-card breeder">
+              <div class="job-icon">🐄</div>
+              <h3>Criador</h3>
+              <p>Reproduza e dome animais</p>
+              <div class="job-examples">
+                <div class="job-reward">Ganhe por criar animais</div>
+              </div>
+            </div>
+
+            <div class="job-card fisher">
+              <div class="job-icon">🎣</div>
+              <h3>Pescador</h3>
+              <p>Pesque peixes</p>
+              <div class="job-examples">
+                <div class="job-reward">Bacalhau: <span class="money">R$ 0.96</span> + 1 XP</div>
+                <div class="job-reward">Peixe Tropical: <span class="money">R$ 2.88</span> + 3 XP</div>
+              </div>
+            </div>
+
+            <div class="job-card enchanter">
+              <div class="job-icon">✨</div>
+              <h3>Encantador</h3>
+              <p>Encante itens</p>
+              <div class="job-examples">
+                <div class="job-reward">Ganhe encantando</div>
+              </div>
+            </div>
+
+            <div class="job-card woodcutter">
+              <div class="job-icon">🪓</div>
+              <h3>Lenhador</h3>
+              <p>Corte árvores</p>
+              <div class="job-examples">
+                <div class="job-reward">Ganhe cortando madeira</div>
+              </div>
+            </div>
+
+            <div class="job-card digger">
+              <div class="job-icon">🥄</div>
+              <h3>Escavador</h3>
+              <p>Cave terra, areia, etc.</p>
+              <div class="job-examples">
+                <div class="job-reward">Ganhe cavando</div>
+              </div>
+            </div>
+
+            <div class="job-card gladiator">
+              <div class="job-icon">⚔️</div>
+              <h3>Gladiador</h3>
+              <p>Mate outros jogadores (PvP)</p>
+              <div class="job-examples">
+                <div class="job-reward">Ganhe em combate PvP</div>
+              </div>
+            </div>
+
+            <div class="job-card guardian">
+              <div class="job-icon">🛡️</div>
+              <h3>Guardião</h3>
+              <p>Defenda vilas de raids</p>
+              <div class="job-examples">
+                <div class="job-reward">Ganhe defendendo vilas</div>
+              </div>
+            </div>
+
+            <div class="job-card crafter">
+              <div class="job-icon">🔨</div>
+              <h3>Produtor</h3>
+              <p>Crafte itens</p>
+              <div class="job-examples">
+                <div class="job-reward">Ganhe craftando</div>
+              </div>
+            </div>
+
+            <div class="job-card trader">
+              <div class="job-icon">💎</div>
+              <h3>Comerciante</h3>
+              <p>Negocie com aldeões</p>
+              <div class="job-examples">
+                <div class="job-reward">Ganhe negociando</div>
+              </div>
+            </div>
+
+            <div class="job-card explorer">
+              <div class="job-icon">🔭</div>
+              <h3>Explorador</h3>
+              <p>Abra baús de estruturas</p>
+              <div class="job-examples">
+                <div class="job-reward">Ganhe explorando</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert info">
+            <strong>🏆 Ranking:</strong> Veja os melhores jogadores em cada profissão através do menu <code>/jobs</code>!
+          </div>
+        </section>
+
+        <!-- Proteção -->
+        <section id="protecao" class="section">
+          <h2>🏠 Proteção de Terrenos</h2>
+
+          <div class="protection-guide">
+            <h3>Criar Sua Primeira Proteção</h3>
+            <ol class="steps">
+              <li>
+                <strong>Pegue uma pá de ouro</strong>
+                <p>(Golden Shovel)</p>
+              </li>
+              <li>
+                <strong>Clique com botão direito</strong>
+                <p>No primeiro canto do terreno</p>
+              </li>
+              <li>
+                <strong>Clique com botão direito</strong>
+                <p>No canto oposto</p>
+              </li>
+              <li>
+                <strong>Pronto! 🎉</strong>
+                <p>Seu terreno está protegido!</p>
+              </li>
+            </ol>
+
+            <div class="command-list">
+              <h4>Comandos Úteis</h4>
+              <div class="command-item">
+                <code>/trust &lt;jogador&gt;</code>
+                <span>Dar permissão total</span>
+              </div>
+              <div class="command-item">
+                <code>/containertrust &lt;jogador&gt;</code>
+                <span>Permitir usar baús</span>
+              </div>
+              <div class="command-item">
+                <code>/accesstrust &lt;jogador&gt;</code>
+                <span>Permitir usar botões/alavancas</span>
+              </div>
+              <div class="command-item">
+                <code>/untrust &lt;jogador&gt;</code>
+                <span>Remover permissões</span>
+              </div>
+              <div class="command-item">
+                <code>/abandonclaim</code>
+                <span>Deletar proteção atual</span>
+              </div>
+              <div class="command-item">
+                <code>/claimslist</code>
+                <span>Ver suas proteções</span>
+              </div>
+            </div>
+
+            <div class="alert info">
+              <strong>📊 Blocos Iniciais:</strong> Cada jogador começa com blocos de proteção gratuitos. Ganhe mais blocos jogando no servidor!
+            </div>
+          </div>
+        </section>
+
+        <!-- Homes -->
+        <section id="homes" class="section">
+          <h2>🏡 Sistema de Homes</h2>
+
+          <div class="homes-grid">
+            <div class="home-card">
+              <h3>Definir Home</h3>
+              <div class="command-example">
+                <code>/sethome [nome]</code>
+              </div>
+              <p><strong>Exemplos:</strong></p>
+              <ul class="example-list">
+                <li><code>/sethome</code> - Home principal</li>
+                <li><code>/sethome base</code> - Home "base"</li>
+                <li><code>/sethome farm</code> - Home "farm"</li>
+              </ul>
+            </div>
+
+            <div class="home-card">
+              <h3>Teleportar para Home</h3>
+              <div class="command-example">
+                <code>/home [nome]</code>
+              </div>
+              <p><strong>Exemplos:</strong></p>
+              <ul class="example-list">
+                <li><code>/home</code> - Ir para home principal</li>
+                <li><code>/home base</code> - Ir para "base"</li>
+              </ul>
+            </div>
+
+            <div class="home-card">
+              <h3>Gerenciar Homes</h3>
+              <div class="command-list">
+                <div class="command-item">
+                  <code>/homes</code>
+                  <span>Ver todas suas homes</span>
+                </div>
+                <div class="command-item">
+                  <code>/delhome [nome]</code>
+                  <span>Deletar uma home</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Kits -->
+        <section id="kits" class="section">
+          <h2>🎁 Kits Iniciais</h2>
+
+          <div class="kits-simple">
+            <div class="kit-card starter">
+              <div class="kit-header">
+                <h3>Ver Kits Disponíveis</h3>
+              </div>
+              <div class="kit-content">
+                <div class="command-example">
+                  <code>/kits</code>
+                </div>
+              </div>
+            </div>
+
+            <div class="kit-card stone">
+              <div class="kit-header">
+                <h3>Pegar um Kit</h3>
+              </div>
+              <div class="kit-content">
+                <div class="command-example">
+                  <code>/kit &lt;nome&gt;</code>
+                </div>
+                <p class="example-text"><strong>Exemplo:</strong> <code>/kit starter</code></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert warning">
+            <strong>⏱️ Cooldown:</strong> Kits têm tempo de espera entre usos.
+          </div>
+        </section>
+
+        <!-- Comandos Essenciais -->
         <section id="comandos" class="section">
-          <h2>🎮 Comandos Básicos</h2>
+          <h2>⚔️ Comandos Essenciais</h2>
 
           <div class="command-grid">
             <div class="command-card">
@@ -124,23 +492,7 @@
               <div class="command-list">
                 <div class="command-item">
                   <code>/spawn</code>
-                  <span>Volta ao spawn</span>
-                </div>
-                <div class="command-item">
-                  <code>/sethome &lt;nome&gt;</code>
-                  <span>Criar home (máx. 5)</span>
-                </div>
-                <div class="command-item">
-                  <code>/home &lt;nome&gt;</code>
-                  <span>Ir para home</span>
-                </div>
-                <div class="command-item">
-                  <code>/delhome &lt;nome&gt;</code>
-                  <span>Deletar home</span>
-                </div>
-                <div class="command-item">
-                  <code>/homes</code>
-                  <span>Ver todos seus homes</span>
+                  <span>Voltar ao spawn</span>
                 </div>
                 <div class="command-item">
                   <code>/tpa &lt;jogador&gt;</code>
@@ -154,27 +506,27 @@
                   <code>/tpdeny</code>
                   <span>Negar teleporte</span>
                 </div>
+                <div class="command-item">
+                  <code>/back</code>
+                  <span>Voltar ao local anterior</span>
+                </div>
               </div>
             </div>
 
             <div class="command-card">
-              <h3>Comunicação</h3>
+              <h3>Chat e Social</h3>
               <div class="command-list">
                 <div class="command-item">
-                  <code>/msg &lt;jogador&gt;</code>
+                  <code>/msg &lt;jogador&gt; &lt;msg&gt;</code>
                   <span>Mensagem privada</span>
                 </div>
                 <div class="command-item">
-                  <code>/reply</code>
-                  <span>Responder (atalho: /r)</span>
+                  <code>/r &lt;mensagem&gt;</code>
+                  <span>Responder última mensagem</span>
                 </div>
                 <div class="command-item">
-                  <code>/afk</code>
-                  <span>Marcar como ausente</span>
-                </div>
-                <div class="command-item">
-                  <code>/list</code>
-                  <span>Ver jogadores online</span>
+                  <code>/ignore &lt;jogador&gt;</code>
+                  <span>Ignorar jogador</span>
                 </div>
               </div>
             </div>
@@ -183,613 +535,135 @@
               <h3>Informações</h3>
               <div class="command-list">
                 <div class="command-item">
-                  <code>/balance</code>
-                  <span>Ver seu saldo</span>
-                </div>
-                <div class="command-item">
-                  <code>/baltop</code>
-                  <span>Ranking dos mais ricos</span>
-                </div>
-                <div class="command-item">
-                  <code>/pay &lt;jogador&gt; &lt;valor&gt;</code>
-                  <span>Enviar dinheiro</span>
-                </div>
-                <div class="command-item">
-                  <code>/rules</code>
-                  <span>Ver regras</span>
-                </div>
-                <div class="command-item">
-                  <code>/help</code>
-                  <span>Ver ajuda</span>
+                  <code>/list</code>
+                  <span>Ver jogadores online</span>
                 </div>
                 <div class="command-item">
                   <code>/ping</code>
                   <span>Ver seu ping</span>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Economia -->
-        <section id="economia" class="section">
-          <h2>💰 Sistema de Economia</h2>
-
-          <div class="info-box highlight">
-            <h3>Moeda: R$ (Real Brasileiro)</h3>
-            <p>Nossa economia é baseada em valores realistas para manter o jogo balanceado e divertido!</p>
-          </div>
-
-          <div class="economy-grid">
-            <div class="economy-card">
-              <h3>💵 Como Ganhar Dinheiro</h3>
-              <ul>
-                <li><strong>Vendendo na Loja:</strong> Use <code>/loja</code> para vender itens</li>
-                <li><strong>Subindo Skills:</strong> Ganhe R$ ao upar de nível</li>
-                <li><strong>Vendendo para Jogadores:</strong> Negocie com outros players</li>
-              </ul>
-            </div>
-
-            <div class="economy-card">
-              <h3>⚠️ Limites Diários</h3>
-              <div class="alert warning">
-                <strong>Atenção:</strong> Existem limites de venda por dia para manter a economia balanceada!
-              </div>
-              <ul>
-                <li>Farming: 20 stacks/dia</li>
-                <li>Diamantes: 5 unidades/dia</li>
-                <li>Ferro: 20 unidades/dia</li>
-                <li>Ouro: 10 unidades/dia</li>
-              </ul>
-              <p class="small-text">Limites resetam à meia-noite</p>
-            </div>
-          </div>
-
-          <div class="profit-calc">
-            <h3>💎 Cálculo de Lucro Máximo Diário</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>Fonte</th>
-                  <th>Quantidade</th>
-                  <th>Lucro</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>💎 Diamantes</td>
-                  <td>5 unidades</td>
-                  <td class="price-sell">R$1.750</td>
-                </tr>
-                <tr>
-                  <td>🟡 Ouro</td>
-                  <td>10 unidades</td>
-                  <td class="price-sell">R$1.000</td>
-                </tr>
-                <tr>
-                  <td>⚪ Ferro</td>
-                  <td>20 unidades</td>
-                  <td class="price-sell">R$1.000</td>
-                </tr>
-                <tr>
-                  <td>🌾 Cana de Açúcar</td>
-                  <td>20 stacks</td>
-                  <td class="price-sell">R$240</td>
-                </tr>
-                <tr>
-                  <td colspan="2"><strong>TOTAL MÁXIMO/DIA</strong></td>
-                  <td class="price-sell"><strong>R$3.990</strong></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <!-- Loja -->
-        <section id="loja" class="section">
-          <h2>🏪 Loja do Servidor</h2>
-
-          <div class="shop-info">
-            <p><strong>Comando:</strong> <code>/loja</code> ou <code>/shop</code></p>
-            <p><strong>Como usar:</strong></p>
-            <ul>
-              <li>Clique esquerdo para <span class="buy">COMPRAR</span></li>
-              <li>Clique direito para <span class="sell">VENDER</span></li>
-              <li>Shift + Clique direito para escolher quantidade</li>
-            </ul>
-          </div>
-
-          <div class="price-tables">
-            <div class="price-table">
-              <h3>🌾 Plantação</h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Item (64x)</th>
-                    <th>Compra</th>
-                    <th>Venda</th>
-                    <th>Limite/Dia</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Trigo</td>
-                    <td class="price-buy">R$15</td>
-                    <td class="price-sell">R$10</td>
-                    <td>20 stacks</td>
-                  </tr>
-                  <tr>
-                    <td>Cenoura</td>
-                    <td class="price-buy">R$12</td>
-                    <td class="price-sell">R$8</td>
-                    <td>20 stacks</td>
-                  </tr>
-                  <tr>
-                    <td>Batata</td>
-                    <td class="price-buy">R$12</td>
-                    <td class="price-sell">R$8</td>
-                    <td>20 stacks</td>
-                  </tr>
-                  <tr>
-                    <td>Cana de Açúcar</td>
-                    <td class="price-buy">R$18</td>
-                    <td class="price-sell">R$12</td>
-                    <td>20 stacks</td>
-                  </tr>
-                  <tr>
-                    <td>Melancia</td>
-                    <td class="price-buy">R$10</td>
-                    <td class="price-sell">R$6</td>
-                    <td>20 stacks</td>
-                  </tr>
-                  <tr>
-                    <td>Abóbora</td>
-                    <td class="price-buy">R$10</td>
-                    <td class="price-sell">R$6</td>
-                    <td>20 stacks</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div class="price-table">
-              <h3>⛏️ Minerais</h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Item</th>
-                    <th>Compra</th>
-                    <th>Venda</th>
-                    <th>Limite/Dia</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>💎 Diamante</td>
-                    <td class="price-buy">R$500</td>
-                    <td class="price-sell">R$350</td>
-                    <td>5 unidades</td>
-                  </tr>
-                  <tr>
-                    <td>🟡 Ouro</td>
-                    <td class="price-buy">R$150</td>
-                    <td class="price-sell">R$100</td>
-                    <td>10 unidades</td>
-                  </tr>
-                  <tr>
-                    <td>⚪ Ferro</td>
-                    <td class="price-buy">R$80</td>
-                    <td class="price-sell">R$50</td>
-                    <td>20 unidades</td>
-                  </tr>
-                  <tr>
-                    <td>🟠 Cobre</td>
-                    <td class="price-buy">R$40</td>
-                    <td class="price-sell">R$25</td>
-                    <td>30 unidades</td>
-                  </tr>
-                  <tr>
-                    <td>🔵 Lápis-Lazúli</td>
-                    <td class="price-buy">R$30</td>
-                    <td class="price-sell">R$20</td>
-                    <td>40 unidades</td>
-                  </tr>
-                  <tr>
-                    <td>🟢 Esmeralda</td>
-                    <td class="price-buy">R$400</td>
-                    <td class="price-sell">R$280</td>
-                    <td>8 unidades</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-
-        <!-- Kits -->
-        <section id="kits" class="section">
-          <h2>🎁 Sistema de Kits</h2>
-
-          <p class="section-intro"><strong>Comando:</strong> <code>/kit</code> ou <code>/kits</code></p>
-
-          <div class="kits-grid">
-            <div class="kit-card starter">
-              <div class="kit-header">
-                <h3>🌱 Kit Iniciante</h3>
-                <span class="kit-price free">GRÁTIS</span>
-              </div>
-              <div class="kit-content">
-                <p class="kit-cooldown">Uso único</p>
-                <h4>Itens incluídos:</h4>
-                <ul>
-                  <li>1x Machado de Madeira</li>
-                  <li>1x Picareta de Madeira</li>
-                  <li>1x Espada de Madeira</li>
-                  <li>5x Pães</li>
-                  <li>1x Pá de Ouro (para proteger terreno)</li>
-                  <li>1x Cama</li>
-                </ul>
-                <div class="alert info">
-                  <strong>✨ Bônus:</strong> Você recebe automaticamente ao entrar pela primeira vez!
+                <div class="command-item">
+                  <code>/playtime</code>
+                  <span>Ver tempo de jogo</span>
                 </div>
               </div>
-            </div>
-
-            <div class="kit-card stone">
-              <div class="kit-header">
-                <h3>🪨 Kit Pedra</h3>
-                <span class="kit-price free">GRÁTIS</span>
-              </div>
-              <div class="kit-content">
-                <p class="kit-cooldown">Cooldown: 24 horas</p>
-                <h4>Itens incluídos:</h4>
-                <ul>
-                  <li>1x Machado de Pedra</li>
-                  <li>1x Picareta de Pedra</li>
-                  <li>1x Espada de Pedra</li>
-                </ul>
-                <div class="alert info">
-                  <strong>💡 Dica:</strong> Use quando suas ferramentas quebrarem! Pegue todo dia para economizar recursos.
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="section">
-          <h2>⚔️ Sistema de Skills (AuraSkills)</h2>
-
-          <p class="section-intro"><strong>Comando:</strong> <code>/skills</code></p>
-          <p>Faça ações para ganhar XP, suba de nível para ficar mais forte e ganhe dinheiro!</p>
-
-          <div class="skills-grid">
-            <div class="skill-category">
-              <h3>Skills de Coleta</h3>
-              <div class="skill-item">
-                <span class="skill-icon">🌾</span>
-                <div class="skill-info">
-                  <strong>Farming</strong>
-                  <p>Plantar e colher - R$5 a cada 3 níveis</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-icon">⛏️</span>
-                <div class="skill-info">
-                  <strong>Mining</strong>
-                  <p>Minerar blocos - R$10 a cada 3 níveis</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-icon">🪓</span>
-                <div class="skill-info">
-                  <strong>Foraging</strong>
-                  <p>Cortar árvores - R$8 a cada 3 níveis</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-icon">🎣</span>
-                <div class="skill-info">
-                  <strong>Fishing</strong>
-                  <p>Pescar - R$5 a cada 3 níveis</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-icon">🏜️</span>
-                <div class="skill-info">
-                  <strong>Excavation</strong>
-                  <p>Cavar com pá - R$5 a cada 3 níveis</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h3>Skills de Combate</h3>
-              <div class="skill-item">
-                <span class="skill-icon">⚔️</span>
-                <div class="skill-info">
-                  <strong>Fighting</strong>
-                  <p>Combate corpo a corpo - R$15 a cada 3 níveis</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-icon">🏹</span>
-                <div class="skill-info">
-                  <strong>Archery</strong>
-                  <p>Arco e flecha - R$8 a cada 3 níveis</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-icon">🛡️</span>
-                <div class="skill-info">
-                  <strong>Defense</strong>
-                  <p>Receber dano - R$8 a cada 3 níveis</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h3>Skills de Suporte</h3>
-              <div class="skill-item">
-                <span class="skill-icon">🧪</span>
-                <div class="skill-info">
-                  <strong>Alchemy</strong>
-                  <p>Fazer poções - R$3 a cada 3 níveis</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-icon">✨</span>
-                <div class="skill-info">
-                  <strong>Enchanting</strong>
-                  <p>Encantar itens - R$3 a cada 3 níveis</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-icon">🏃</span>
-                <div class="skill-info">
-                  <strong>Agility</strong>
-                  <p>Correr e pular - R$5 a cada 3 níveis</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="alert info">
-            <strong>💡 Dica:</strong> Fighting é a skill que dá mais dinheiro (R$15 a cada 3 níveis)! Crie um mob grinder para upar rápido.
-          </div>
-        </section>
-
-        <!-- Proteção -->
-        <section id="protecao" class="section">
-          <h2>🏰 Proteção de Terrenos</h2>
-
-          <div class="protection-guide">
-            <h3>Como Proteger Seu Terreno</h3>
-            <ol class="steps">
-              <li>
-                <strong>Pegue uma Pá de Ouro</strong>
-                <p>Você recebe uma no Kit Iniciante, ou pode craftar</p>
-              </li>
-              <li>
-                <strong>Marque o Primeiro Canto</strong>
-                <p>Clique DIREITO com a pá de ouro no chão</p>
-              </li>
-              <li>
-                <strong>Marque o Segundo Canto</strong>
-                <p>Clique DIREITO no canto oposto (diagonal)</p>
-              </li>
-              <li>
-                <strong>Pronto!</strong>
-                <p>Sua área está protegida contra griefing</p>
-              </li>
-            </ol>
-
-            <div class="command-list">
-              <h4>Comandos de Proteção</h4>
-              <div class="command-item">
-                <code>/claim</code>
-                <span>Criar área protegida</span>
-              </div>
-              <div class="command-item">
-                <code>/abandonclaim</code>
-                <span>Deletar área atual</span>
-              </div>
-              <div class="command-item">
-                <code>/claimslist</code>
-                <span>Ver todas suas áreas</span>
-              </div>
-              <div class="command-item">
-                <code>/claimblocks</code>
-                <span>Ver blocos disponíveis</span>
-              </div>
-              <div class="command-item">
-                <code>/trust &lt;jogador&gt;</code>
-                <span>Dar acesso total</span>
-              </div>
-              <div class="command-item">
-                <code>/containertrust &lt;jogador&gt;</code>
-                <span>Dar acesso a baús/portas</span>
-              </div>
-              <div class="command-item">
-                <code>/untrust &lt;jogador&gt;</code>
-                <span>Remover acesso</span>
-              </div>
-            </div>
-
-            <div class="info-box">
-              <h4>📊 Blocos de Proteção</h4>
-              <ul>
-                <li><strong>Inicial:</strong> 500 blocos</li>
-                <li><strong>Ganho:</strong> 1.000 blocos por hora jogada</li>
-                <li><strong>Máximo:</strong> 80.000 blocos</li>
-              </ul>
-              <p class="small-text">Área = Largura × Comprimento (ex: casa 10×10 = 100 blocos)</p>
             </div>
           </div>
         </section>
 
         <!-- Regras -->
         <section id="regras" class="section">
-          <h2>⚠️ Regras do Servidor</h2>
+          <h2>📜 Regras do Servidor</h2>
 
           <div class="rules-grid">
-            <div class="rules-card forbidden">
-              <h3>❌ Proibido</h3>
-              <ul>
-                <li>Usar hacks/cheats (X-Ray, Fly, etc.)</li>
-                <li>Griefar (destruir construções alheias)</li>
-                <li>Roubar de áreas protegidas</li>
-                <li>Spam no chat</li>
-                <li>Linguagem ofensiva</li>
-                <li>Farms AFK (kick em 15min)</li>
-                <li>Exploits/bugs</li>
-                <li>Duplicar itens</li>
-              </ul>
-            </div>
-
             <div class="rules-card allowed">
               <h3>✅ Permitido</h3>
               <ul>
+                <li>Construir e explorar livremente</li>
+                <li>Fazer comércio com outros jogadores</li>
                 <li>PvP consensual</li>
-                <li>Comércio entre jogadores</li>
-                <li>Farms automáticas (sem AFK)</li>
-                <li>Construções criativas</li>
-                <li>Ajudar outros jogadores</li>
-                <li>Vender itens/serviços</li>
+                <li>Usar farms automáticas (dentro do limite)</li>
               </ul>
+            </div>
+
+            <div class="rules-card forbidden">
+              <h3>❌ Proibido</h3>
+              <ul>
+                <li>Griefing (destruir construções)</li>
+                <li>Roubo (pegar itens sem permissão)</li>
+                <li>Hacks/Cheats (modificações)</li>
+                <li>Spam no chat</li>
+                <li>Linguagem ofensiva</li>
+                <li>Exploits de bugs</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="punishment-system">
+            <h3>⚠️ Sistema de Punições</h3>
+            <div class="punishment-steps">
+              <div class="punishment-step">
+                <div class="step-num">1</div>
+                <div class="step-text">Aviso (primeira vez)</div>
+              </div>
+              <div class="punishment-step">
+                <div class="step-num">2</div>
+                <div class="step-text">Mute/Tempban (reincidência)</div>
+              </div>
+              <div class="punishment-step">
+                <div class="step-num">3</div>
+                <div class="step-text">Ban permanente (casos graves)</div>
+              </div>
             </div>
           </div>
 
           <div class="alert warning">
-            <strong>🛡️ Sistema Anti-Cheat Ativo:</strong> O servidor possui GrimAC para detectar hacks. Jogue limpo para evitar punições automáticas!
-          </div>
-        </section>
-
-        <!-- Progressão -->
-        <section id="progressao" class="section">
-          <h2>📈 Guia de Progressão</h2>
-
-          <div class="progression-timeline">
-            <div class="timeline-item">
-              <div class="timeline-badge">Dia 1</div>
-              <div class="timeline-content">
-                <h4>🌱 Iniciante</h4>
-                <ul>
-                  <li>Receba o Kit Iniciante</li>
-                  <li>Colete recursos básicos</li>
-                  <li>Faça uma casa simples</li>
-                  <li>Proteja sua área com /claim</li>
-                  <li>Crie ferramentas de ferro</li>
-                  <li><strong>Meta:</strong> Casa protegida + R$50</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-badge">Dia 2-3</div>
-              <div class="timeline-content">
-                <h4>🔨 Intermediário</h4>
-                <ul>
-                  <li>Minere diamantes (5 unidades)</li>
-                  <li>Venda ferro na loja (R$50 cada)</li>
-                  <li>Pegue Kit Pedra (grátis)</li>
-                  <li>Comece a farmar trigo</li>
-                  <li>Crie farm 20×20</li>
-                  <li><strong>Meta:</strong> R$3.000 + Ferramentas de diamante</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-badge">Semana 1</div>
-              <div class="timeline-content">
-                <h4>💎 Avançado</h4>
-                <ul>
-                  <li>Crie farms automáticas</li>
-                  <li>Venda limites máximos diários</li>
-                  <li>Skills nível 20+</li>
-                  <li>Armadura de diamante completa</li>
-                  <li>Mob grinder funcionando</li>
-                  <li><strong>Meta:</strong> R$15.000 + Base estabelecida</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-badge">Mês 1</div>
-              <div class="timeline-content">
-                <h4>👑 Veterano</h4>
-                <ul>
-                  <li>R$50.000+</li>
-                  <li>Skills nível 50+</li>
-                  <li>Elytra e Beacon</li>
-                  <li>Top 10 em /baltop</li>
-                  <li>Base gigante</li>
-                  <li><strong>Meta:</strong> Jogador estabelecido e respeitado</li>
-                </ul>
-              </div>
-            </div>
+            <strong>🛡️ Anti-Cheat:</strong> Usamos <strong>GrimAC</strong> para detectar hacks e cheats.
           </div>
         </section>
 
         <!-- FAQ -->
         <section id="faq" class="section">
-          <h2>❓ FAQ - Perguntas Frequentes</h2>
+          <h2>🆘 FAQ - Perguntas Frequentes</h2>
 
           <div class="faq-grid">
             <div class="faq-card">
-              <h3>🎮 Geral</h3>
+              <h3>🏠 Proteção</h3>
               <div class="faq-item">
-                <strong>Q: Preciso me registrar?</strong>
-                <p>A: Jogadores Java SIM (/register). Jogadores Bedrock NÃO (automático).</p>
+                <strong>Q: Como protejo minha casa?</strong>
+                <p>A: Use uma pá de ouro e clique nos cantos do terreno.</p>
               </div>
               <div class="faq-item">
-                <strong>Q: Posso jogar no celular?</strong>
-                <p>A: SIM! Minecraft Bedrock Edition funciona perfeitamente.</p>
+                <strong>Q: Meu terreno não está protegido</strong>
+                <p>A: Verifique se usou a pá de ouro corretamente. Use <code>/claimslist</code>.</p>
+              </div>
+            </div>
+
+            <div class="faq-card">
+              <h3>🔐 Login</h3>
+              <div class="faq-item">
+                <strong>Q: Esqueci minha senha</strong>
+                <p>A: Entre em contato com um administrador no Discord.</p>
               </div>
               <div class="faq-item">
-                <strong>Q: Perdi minha senha, o que faço?</strong>
-                <p>A: Peça ajuda a um admin no Discord.</p>
+                <strong>Q: Quanto dura uma sessão?</strong>
+                <p>A: 5 minutos. Se voltar nesse tempo, não precisa fazer login.</p>
+              </div>
+              <div class="faq-item">
+                <strong>Q: Não consigo quebrar blocos</strong>
+                <p>A: Você precisa fazer login primeiro com <code>/login &lt;senha&gt;</code>.</p>
               </div>
             </div>
 
             <div class="faq-card">
               <h3>💰 Economia</h3>
               <div class="faq-item">
-                <strong>Q: Como ganho dinheiro rápido?</strong>
-                <p>A: Minere diamantes e venda (R$350 cada). Limite: 5/dia = R$1.750.</p>
+                <strong>Q: Como ganho dinheiro?</strong>
+                <p>A: Trabalhe nas profissões (<code>/jobs</code>), venda itens ou negocie.</p>
               </div>
               <div class="faq-item">
-                <strong>Q: Qual a melhor farm para dinheiro?</strong>
-                <p>A: Cana de açúcar (R$12 por stack, 20 stacks/dia = R$240).</p>
+                <strong>Q: Posso ter várias profissões?</strong>
+                <p>A: Sim! Você pode trabalhar em todas as 13 profissões ao mesmo tempo.</p>
               </div>
               <div class="faq-item">
-                <strong>Q: Posso vender ilimitado?</strong>
-                <p>A: NÃO. Existem limites diários que resetam à meia-noite.</p>
-              </div>
-            </div>
-
-            <div class="faq-card">
-              <h3>🎁 Kits</h3>
-              <div class="faq-item">
-                <strong>Q: Quantas vezes posso pegar o Kit Iniciante?</strong>
-                <p>A: Apenas 1 vez (uso único).</p>
-              </div>
-              <div class="faq-item">
-                <strong>Q: Kit Pedra é grátis?</strong>
-                <p>A: SIM! E pode pegar a cada 24 horas.</p>
+                <strong>Q: Posso transferir dinheiro?</strong>
+                <p>A: Sim! Use <code>/pay &lt;jogador&gt; &lt;quantia&gt;</code></p>
               </div>
             </div>
 
             <div class="faq-card">
-              <h3>🏰 Proteção</h3>
+              <h3>🎮 Geral</h3>
               <div class="faq-item">
-                <strong>Q: Como protejo minha casa?</strong>
-                <p>A: Use pá de ouro, clique em dois cantos opostos.</p>
+                <strong>Q: Posso jogar no Bedrock?</strong>
+                <p>A: Sim! Use o IP e porta 19132. Seu nome terá <code>~</code> na frente.</p>
               </div>
               <div class="faq-item">
-                <strong>Q: Posso dar acesso a amigos?</strong>
-                <p>A: SIM! Use /containertrust &lt;jogador&gt; para baús ou /trust &lt;jogador&gt; para tudo.</p>
+                <strong>Q: Há limite de homes?</strong>
+                <p>A: Depende da sua permissão. Jogadores normais têm limite.</p>
+              </div>
+              <div class="faq-item">
+                <strong>Q: Como vejo o ranking?</strong>
+                <p>A: Use <code>/jobs</code> e clique na profissão desejada.</p>
               </div>
             </div>
           </div>
@@ -801,88 +675,53 @@
 
           <div class="troubleshooting-grid">
             <div class="trouble-card">
-              <h3>❌ Não Consigo Entrar</h3>
-              <p><strong>Problema:</strong> "Failed to connect"</p>
-              <p><strong>Soluções:</strong></p>
-              <ul>
-                <li>Verifique se o IP está correto</li>
-                <li>Verifique sua conexão com internet</li>
-                <li>Tente reiniciar o Minecraft</li>
-                <li>Pergunte no Discord se o servidor está online</li>
-              </ul>
-            </div>
-
-            <div class="trouble-card">
-              <h3>🔑 Esqueci Minha Senha</h3>
-              <p><strong>Problema:</strong> Não lembro a senha do /login</p>
+              <h3>❌ "Você não está registrado!"</h3>
               <p><strong>Solução:</strong></p>
-              <ul>
-                <li>Peça ajuda a um admin no Discord</li>
-                <li>Admin pode resetar sua senha</li>
-              </ul>
+              <p>Execute <code>/register &lt;senha&gt; &lt;senha&gt;</code> para criar sua conta.</p>
             </div>
 
             <div class="trouble-card">
-              <h3>🎁 Não Recebo Kit</h3>
-              <p><strong>Problema:</strong> Não recebi o kit inicial</p>
-              <p><strong>Soluções:</strong></p>
-              <ul>
-                <li>Digite /kit e clique no Kit Iniciante</li>
-                <li>Verifique seu inventário (pode estar cheio)</li>
-                <li>Se já usou antes, não pode pegar de novo</li>
-              </ul>
-            </div>
-
-            <div class="trouble-card">
-              <h3>🏰 Não Consigo Proteger</h3>
-              <p><strong>Problema:</strong> Pá de ouro não funciona</p>
-              <p><strong>Soluções:</strong></p>
-              <ul>
-                <li>Certifique-se que é uma pá de OURO</li>
-                <li>Clique DIREITO (não esquerdo)</li>
-                <li>Verifique se tem blocos disponíveis (/claimblocks)</li>
-                <li>Área mínima: 100 blocos</li>
-              </ul>
-            </div>
-
-            <div class="trouble-card">
-              <h3>💀 Perdi Meus Itens</h3>
-              <p><strong>Problema:</strong> Morri e perdi tudo</p>
-              <p><strong>Soluções:</strong></p>
-              <ul>
-                <li>Volte ao local rapidamente (5min)</li>
-                <li>Use /back se disponível</li>
-                <li>Peça ajuda a outros jogadores</li>
-                <li><strong>Prevenção:</strong> Use baús para itens valiosos</li>
-              </ul>
-            </div>
-
-            <div class="trouble-card">
-              <h3>🚫 Limite Atingido</h3>
-              <p><strong>Problema:</strong> "Limite diário atingido"</p>
+              <h3>❌ "Senha incorreta!"</h3>
               <p><strong>Solução:</strong></p>
-              <ul>
-                <li>Você atingiu o limite de vendas do dia</li>
-                <li>Limites resetam à meia-noite</li>
-                <li>Espere até amanhã ou venda outros itens</li>
-              </ul>
+              <p>Verifique se digitou corretamente. Use <code>/changepassword</code> se esqueceu.</p>
             </div>
-          </div>
 
-          <div class="alert info">
-            <strong>💬 Precisa de mais ajuda?</strong> Entre no Discord ou WhatsApp para falar com a comunidade e administradores!
+            <div class="trouble-card">
+              <h3>❌ "Tempo limite excedido"</h3>
+              <p><strong>Solução:</strong></p>
+              <p>Você demorou muito para fazer login. Entre novamente e faça login mais rápido.</p>
+            </div>
+
+            <div class="trouble-card">
+              <h3>❌ "Caracteres inválidos"</h3>
+              <p><strong>Solução:</strong></p>
+              <p>Nomes permitidos: letras, números, <code>_</code> e <code>~</code> (Bedrock).</p>
+            </div>
+
+            <div class="trouble-card">
+              <h3>❌ "Máximo de registros por IP"</h3>
+              <p><strong>Solução:</strong></p>
+              <p>Apenas 1 conta por IP. Entre em contato com admin para exceção.</p>
+            </div>
+
+            <div class="trouble-card">
+              <h3>❌ Não consigo quebrar blocos</h3>
+              <p><strong>Solução:</strong></p>
+              <p>Faça login primeiro com <code>/login &lt;senha&gt;</code>.</p>
+            </div>
           </div>
         </section>
       </main>
 
       <footer>
-        <p>Servidor JackMine - Divirta-se! 🎮</p>
-        <p class="small-text">Precisa de ajuda? Use <code>/help</code> ou pergunte no chat!</p>
+        <p>🎮 Servidor JackMine - Bom Jogo!</p>
+        <p class="small-text">Agora você está pronto para começar sua aventura!</p>
         <div class="footer-links">
           <a href="https://chat.whatsapp.com/EwNL8Z7Cv0ECGcZV9jrVkz" target="_blank">WhatsApp</a>
           <span>|</span>
           <a href="https://discord.gg/WSbCQECGbF" target="_blank">Discord</a>
         </div>
+        <p class="small-text update-date">Última atualização: Dezembro 2025</p>
       </footer>
     </div>
   </body>
