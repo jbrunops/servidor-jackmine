@@ -89,6 +89,24 @@ body {
   pointer-events: none;
 }
 
+.hero-logo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  max-width: 100px;
+  height: auto;
+  filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
 .hero h1 {
   font-family: "Press Start 2P", cursive;
   font-size: 2rem;
@@ -567,20 +585,6 @@ tbody tr:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
-  margin-top: 30px;
-}
-
-.kit-card {
-  background: white;
-  border: 4px solid var(--coal-black);
-  overflow: hidden;
-  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.2);
-  transition: transform 0.1s ease;
-}
-
-.kit-card:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.3);
 }
 
 .kit-header {
