@@ -97,7 +97,7 @@ body {
 }
 
 .logo-img {
-  max-width: 100px;
+  max-width: 250px;
   height: auto;
   filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.3));
   transition: transform 0.3s ease;
